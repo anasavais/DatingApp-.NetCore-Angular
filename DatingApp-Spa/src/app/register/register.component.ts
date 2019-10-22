@@ -25,6 +25,7 @@ model: any = {};
       }
       );
     console.log(this.model);
+    
   }
 
   Cancel() {
