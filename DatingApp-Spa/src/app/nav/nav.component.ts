@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
   }
   login() {
     this.Auth.login(this.model)
-      .subscribe(next => {console.log('OK'); }, error => {console.log('No'); } );
+      .subscribe(next => {console.log('OK'); }, error => {console.log(error); } );
   }
   loggedin() {
     const token = localStorage.getItem('token');
